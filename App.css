@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul{list-style: none;}
+img{
+  width: 100%;
+  height: 100%;
+}
+.home{
+  padding: 1rem;
+  background: #d1d1d1;  
+}
+.home section{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.home aside{
+  width: 17%;
+  padding: 0.5rem;
+}
+.home main{
+  width: 83%;
+  padding: 0.5rem;
+}
+.home aside p{
+  border-bottom: 2px solid;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.home aside ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home aside p, .home aside .launch_year{
+  text-align: center;
+}
+.home aside .launch_year{
+  display: inline-block;
+  color: #000;
+  background: lightgreen;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+
+.home main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.home main .program{
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3px 2px rgba(0,0,0,0.5);
+  width: 23%;
+  min-height: 345px;
+  max-height: 420px;
+  margin: 0.5rem 0.25rem;
+  display: inline-block;
+}
+.home main .program .photo{
+  width: 100%;
+  height: 25%;
+  background: #d1d1d1;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.home main .info{
+  font-size: 90%;
+}
+.home main .info ul{
+  list-style: disc inside;
+  padding-left: 0.2rem;
+}
+.home main .info h4, .home main .info p{
+  padding: 0.25rem 0;
+}
+
+
+
+@media all and (max-width: 1099px){
+  .home aside{
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+  }
+  .home aside .launch_year{
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+
+@media all and (max-width: 949px){
+  .home aside .launch_year{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media all and (max-width: 699px){
+  .home section{
+    flex-direction: column;
+  }
+  .home section aside, .home section main{
+    width: 100%;
+  }
+  .home main .program{
+    width: 100%;
+  }
+}
